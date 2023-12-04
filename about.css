@@ -1,0 +1,22 @@
+body{
+    background-color: white;
+}
+.container{
+    background: white;
+    text-align: justify;
+}
+.about{
+    margin: 380px auto;
+    width: 80%;
+    max-width: 1000px;
+    font-weight: 500;
+}
+.container .about .red{
+    color: #BA181B;
+    font-weight:500;
+}
+.para{
+    margin-top: 10px;
+    margin-left: 40px;
+    line-height: 40px;
+}

@@ -1,0 +1,203 @@
+/* Footer */
+footer .container{
+    background-color: #161A1D;
+    height: 340px;
+    padding: 20px 30px;
+    width: 100%;
+    min-width: 100px;
+}
+.foot-det-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.foot-det-con > div:nth-child(2){
+    width: 40%;
+    min-width: 150px;
+    height: 100px;
+}
+/* Shop name */
+.shop-name-con{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d1d1d1;
+}
+.shop-name-con p{
+    letter-spacing: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+}
+.shop-name-con p span{
+    margin-right: 20px;
+}
+
+/* Footer Menu  */
+.foot-det-con .menu{
+    margin-top: 36px;
+}
+.foot-det-con .menu a{
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   cursor: pointer;
+   font-weight: 500;
+   text-align: center;
+   margin-left: 30px;
+   line-height: 50px;
+}
+
+/* Track Order */
+.track-order-con{
+    margin-top: 40px;
+}
+.track-order-con p{
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 0;
+}
+/* Input */
+.inp-con{
+    position: relative;
+}
+.inp-con input{
+    width: 70%;
+    padding: 10px 20px;
+    max-width: 300px;
+    font-weight: 600;
+    box-shadow: -15px 13px 0px #BA181B;
+}
+.inp-con input, .track-order-con p{
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    display: block;
+}
+.inp-con .arrow{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 300px;
+    position: relative;
+    right: 0;
+}
+.inp-con .arrow i{
+    position: absolute;
+    color: #000;
+    right: 10px;
+    top: -27px;
+}
+/* Contact */
+.contact-con{
+    position: relative;
+}
+.contact-con a{
+    display: block;
+    line-height: 29px;
+}
+.contact-con i{
+    margin-right: 10px;
+}
+.contact-con p{
+    display: inline;
+    position: absolute;
+}
+/* Hover */
+.foot-det-con a:hover,.contact-con p:hover{
+    text-decoration:underline;
+}
+/* Reserve */
+.reserve-con{
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+    min-width: 100px;
+}
+.reserve-con p{
+    text-align: center;
+    font-weight: 800;
+    cursor: pointer;
+}
+/* Responsiveness */
+@media only screen and (max-width: 660px){
+    .foot-det-con{
+        justify-content:center;
+    }
+    .contact-con p, 
+    .foot-det-con .menu a,
+    .contact-con a,
+    .track-order-con p{
+        font-size: 12px;
+    }
+    .contact-con{
+        width: 30px;
+    }
+    .foot-det-con > div{
+        width: 10%;
+        min-width: 124px;
+    }
+    
+    .foot-det-con > div:nth-child(2){
+        width: 40%;
+        min-width: 150px;
+        height: 100px;
+    }
+    .foot-det-con > div:nth-child(3){
+        width: 30%;
+    }
+
+}
+ @media only screen and (max-width:450px){
+
+    .contact-con i{
+        margin-right: 10px;
+    }
+ }
+@media only screen and (max-width:430px){
+    .contact-con p, 
+    .foot-det-con .menu a,
+    .contact-con a,
+    .track-order-con p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:400px){
+    .contact-con p, 
+    .foot-det-con .menu a,
+    .contact-con a,
+    .track-order-con p{
+        font-size: 12px;
+    }
+    /* Footer */
+footer .container{
+    height: 600px;
+}
+.foot-det-con{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.foot-det-con .menu a{
+    margin-left: 0px;
+ }
+.contact{
+    text-align: center;
+}
+.foot-det-con > div:nth-child(2){
+    width: 100%;
+    min-width: 120px;
+    height: 100px;
+    margin-left: 15px;
+}
+
+.shop-name-con p span{
+    display: block;
+    margin-right: 0px;
+}
+}

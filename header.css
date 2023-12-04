@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 83%);
+    font-weight: 400;
+    margin-top: 200px;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed, higher values bring the element in front of lower ones */
+    background: #0B090A;
+}
+/* Header */
+header .container{
+    /* Container */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    height: 140px;
+    justify-content: space-around;
+    align-items: center;
+    background: #0B090A;
+    position: relative;
+    padding: 0px 20px;
+}
+
+header .container h1{
+    /* Silly Thrifts */
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.48em;
+    color:#fff;
+    cursor: pointer;
+}
+
+span.red{
+    color: #BA181B;
+ }
+
+ /* search bar */
+ /* conainer */
+ .wrapper{
+    width: 40%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* search icon container */
+.search-icon-con{
+    background-color: #BA181B;
+    height: 41px;
+    width: 41px;
+    border: 1px solid #BA181B;
+    display: inline-block;
+}
+/* search icon */
+.search-icon-con i{
+    color: #fff;
+    position:relative;
+    /* Center Icon */
+    top: calc(40% - 10px); 
+    left: calc(40% - 10px); 
+    font-size: 30px;
+    cursor: pointer;
+}
+i{
+    color: #fff;
+}
+.search-bar input{
+    display: inline-block;
+    outline: none;
+    border: none;
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Inter'; 
+    color: #615B5B;
+}
+.search-bar{
+    background-color: #fff;
+    width: 80%;
+    min-width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation */
+nav{
+    text-align: center;
+    margin-top: 10px;
+    z-index: 12;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+ul li a:hover{
+    color: #D3D3D3;
+}
+
+/* Cart and Account */
+.cart,.acc{
+    display: inline;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+.cart{
+    width: 48px;
+    height: 45.38px;
+    font-size: 35px;
+    position: absolute;
+    left: 0;
+}
+.cart_acc{
+    width:140px;
+    position: relative;
+    height: 70px;
+    text-align: center;
+} 
+.acc i{
+    background-color: white;
+    border-radius:50% ;
+    color: #5C5757;
+    padding-top: 5px;
+    text-align: center;
+    width: 36px; 
+    height: 33px;
+    right: 0;
+    font-size: 20px;
+    position: absolute;
+    margin-right: 15px;
+}
+.acc span{
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    margin-right: 8px;
+    text-align: right;
+}
+.acc-dropdown a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 12px 24px;
+}
+.acc-dropdown a:hover{
+    background-color:#293846;
+    color: #fff;
+}
+.acc-dropdown-con{
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    display: none;
+    border-radius: 4px;
+    right: 55px;
+}
+.hide{
+    display: none;
+}
+#show:checked~.acc-dropdown-con{
+    display: block;
+}
+/* Categories */
+
+.categories-con{
+    height:30px;
+    background: #BA181B;
+    display: block;
+    position: relative;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+}
+.categories-con .categories{
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+.categories ul{
+    height:15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.categories ul li i{
+    font-size: 20px;
+}
+.drop-icon{
+    display: none;
+} 
+#social-face:hover{
+ border-radius: 50%;
+ background: #0b5882;
+}
+#social-tiktok:hover{
+ border-radius: 5%;
+ background: #0B090A;
+}
+/* side bar */
+.hamburger{
+   display: none;
+   z-index: 12;
+   cursor: pointer;
+}
+.side{
+    display: none;
+}
+/* dropdown categories */
+.dropdown{
+    display: none;
+}
+/* checkbox */
+#toggle{
+   display: none;
+}
+/* Responsiveness */
+@media only screen and (max-width: 630px) {
+     /* Main nav */
+      .dropbtn{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: 800;
+        display: inline;
+        font-size: 14px;
+    }
+     nav ul li{
+        display: none;
+    }
+    /* Main header */
+   
+    .cart_acc {
+        display: none;
+    }
+    .search-bar{
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+        border: 0;
+        position: absolute;
+        background-color: transparent;
+        font-size: 30px;
+        top: 46px;
+        right: 20px;
+    }
+    header .container{
+    justify-content: space-between;
+    }
+    /* Main categories */
+    .categories-con .categories ul{
+        display: none;
+    }
+    .dropdown{
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 145px;
+        z-index: 29;
+    }
+    .dropdown-content a{
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 15px 30px;
+        text-decoration: none;
+    }
+    .dropdown-content a:hover{
+        color: white;
+        background-color: #293846;
+    }
+    .dropdown-content{
+        margin-left: 30px;
+        border-radius:2px;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        color: black;
+    }
+    .side-con{
+        background-color: #0B090A;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+        box-shadow: 2px 0px 16px 4px rgba(0, 0, 0, 0.5);
+        z-index: 20;
+        padding-bottom: 20px;
+    }
+    /* When toogle is checked or click the bar */
+    #toggle:checked~.side-con{
+        display: block;
+    }
+    /* side bar */
+    .side{
+        display: flex;
+        justify-content: center;
+    }
+    /* X  */
+    .exit{
+        position: absolute;
+        color: #fff;
+        right: 20px;
+        top: 40px;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 1.1rem;
+        font-weight: 800;
+    }
+    .exit:hover{
+        color: #BA181B;
+    }
+    /* Navigation sidebar */
+    div.side ul{
+        margin-top: 140px;
+        width: 60%;
+        height: 100vh;
+
+    }
+    div.side ul li{
+        display: block;
+        line-height: 60px;
+        text-align: left;
+        width: 100%;
+    }
+    div.side ul li a{
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      display: block;
+    }
+    /* the redline side hover effect */
+    div.side ul li:before{
+        background-color: #BA181B;
+        content: "";
+        height: 70px;
+        width: 5px;
+        opacity: 0;
+        position: absolute;
+        transition: all .75s;
+      }
+    div.side ul li:hover:before{
+        transition: all .15s ease-in-out;
+        opacity: 1;
+        background-color: #BA181B;
+    }
+    div.side ul li a i{
+        font-size: 24px;
+      }
+
+}
+@media only screen and (max-width: 550px) {
+    .wrapper{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 430px) {
+  header .container{
+    justify-content: space-between;
+}
+  header .container h1{
+    font-size: 26px;
+    line-height: 30px;
+
+}
+}

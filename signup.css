@@ -1,0 +1,93 @@
+body{
+    background-color: #fff;
+}
+.container{
+    background-color: #fff;
+}
+form{
+    width: 90%;
+    max-width: 500px;
+    display: block;
+    margin: 40px auto;
+    position: relative;
+    border: 1px solid #D7C7CF;
+    text-align: center;
+    padding: 20px 0;
+}
+.container h1{
+    padding: 30px 0;
+    cursor: pointer;
+}
+.container .inputs{
+    width: 88%;
+    margin: 0 auto;
+    height: 200px;
+    text-align: left;
+}
+.container .inputs label{
+    font-weight: 500;
+    line-height: 40px;
+    cursor: pointer;
+}
+.container .inputs input{
+    width: 100%;
+    outline: none;
+    padding: 15px 20px;
+    border:1px solid #D7C7CF;
+}
+.container .red{
+    color: #BA181B;
+    font-weight: 500;
+    text-decoration: none;
+}
+.forgot-pass{
+    float: right;
+}
+.already-con{
+    margin-top: 110px;
+}
+.signup-btn{
+    margin-top: 20px;
+}
+.signup-btn #red-button{
+    width: 90%;
+    padding: 10px;
+    background-color: #BA181B;
+    color: #fff;
+    border: none;
+}
+.signup-btn #red-button:hover, .social-btn button:hover{
+    opacity: 0.9;
+}
+.signup-btn #red-button a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+.social-btn{
+    margin-top: 15px;
+}
+.social-btn button{
+    border: none;
+    width: 40%;
+    padding: 10px;
+}
+.social-btn button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.social-btn .facebook-btn{
+    background-color: #2062AF;
+    width: 40%;
+}
+.social-btn .google-btn{
+    background-color: #E71A1A;
+}
+a.red:hover{
+    text-decoration: underline;
+}
+footer{
+    margin-top: 100px;
+}
