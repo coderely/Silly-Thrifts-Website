@@ -56,7 +56,19 @@ td:last-child,th:last-child{
         max-width:100%;
     }
     .cart-info > div {
-        max-width: 150px;
+        width: 145px;
+    }
+    .cart-info > div p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:340px){
+    .cart-info > div {
+        width: 100%;
+    }
+    td img{
+        width: 70px;
+        margin: 5px 10px;
     }
 }
 @media only screen and (max-width:280px) {
@@ -64,7 +76,7 @@ td:last-child,th:last-child{
         font-size: 12px;
     }
     td img{
-        width: 50px;
+        width: 60px;
         margin-right: 0px;
     }
     td input{
